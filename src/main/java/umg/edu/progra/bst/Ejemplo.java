@@ -8,42 +8,48 @@ import umg.edu.progra.bst.MainBST;
 public class Ejemplo {
 
     public static void main(String[] args) {
-		/*
-		 * Empleado e1 = new Empleado(43, "Walter Cordova", "IT", "A-255"); Empleado e2
-		 * = new Empleado(10, "Roxana Escobar", "RRHH", "A-255"); Empleado e3 = new
-		 * Empleado(8, "Bryan Orellana", "Ventas", "A-255"); Empleado e4 = new
-		 * Empleado(53, "Mario Ruano", "Logistica", "A-255"); Empleado e5 = new
-		 * Empleado(15, "Salazar Bitsco", "IT", "A-255"); Empleado e6 = new Empleado(50,
-		 * "Jonny Bravo", "RRHH", "A-255"); Empleado e7 = new Empleado(54,
-		 * "Sergio Espinoza", "Marketing", "A-255"); Empleado e8 = new Empleado(25,
-		 * "Belter Hernandez", "Contabilidad", "A-255");
-		 * 
-		 * BST bst = new BST(); System.out.println("Esta vacio: " + bst.esVacio() +
-		 * " y es hoja " + bst.esHoja()); System.out.println("Esta vacio: " +
-		 * bst.esVacio() + " y es hoja " + bst.esHoja()); bst.insertar(e1);
-		 * System.out.println("Esta vacio: " + bst.esVacio() + " y es hoja " +
-		 * bst.esHoja()); bst.insertar(e2); System.out.println("Esta vacio: " +
-		 * bst.esVacio() + " y es hoja " + bst.esHoja()); bst.insertar(e3);
-		 * System.out.println("Esta vacio: " + bst.esVacio() + " y es hoja " +
-		 * bst.esHoja()); bst.insertar(e8); System.out.println("Esta vacio: " +
-		 * bst.esVacio() + " y es hoja " + bst.esHoja());
-		 * 
-		 * localizar(bst,20); localizar(bst,45); localizar(bst,25); localizar(bst,19);
-		 * 
-		 * //Arrays.asList(e1, e2, e3, e4, e5, e6, e7).forEach(bst::insertar);
-		 * bst.insertar(e2); bst.insertar(e3); bst.insertar(e4); bst.insertar(e5);
-		 * bst.insertar(e6); bst.insertar(e7); bst.insertar(e8);
-		 * 
-		 * bst.inOrden();
-		 * 
-		 * //BST bst = new BST(); System.out.println("Esta vacio: " + bst.esVacio() +
-		 * " y es hoja " + bst.esHoja()); bst.insertar(e1);
-		 * System.out.println("Esta vacio: " + bst.esVacio() + " y es hoja " +
-		 * bst.esHoja());
-		 */
-    	MainBST main = new MainBST();
-    	main.insertarEmpleados();
-    	main.recorridosArbol();
+		
+		  Empleado e1 = new Empleado(43, "Walter Cordova", "IT", "A-255"); 
+		  Empleado e2 = new Empleado(10, "Roxana Escobar", "RRHH", "A-255"); 
+		  Empleado e3 = new Empleado(8, "Bryan Orellana", "Ventas", "A-255"); 
+		  Empleado e4 = new Empleado(53, "Mario Ruano", "Logistica", "A-255"); 
+		  Empleado e5 = new Empleado(15, "Salazar Bitsco", "IT", "A-255"); 
+		  Empleado e6 = new Empleado(50,"Jonny Bravo", "RRHH", "A-255"); 
+		  Empleado e7 = new Empleado(54, "Sergio Espinoza", "Marketing", "A-255"); 
+		  Empleado e8 = new Empleado(25, "Belter Hernandez", "Contabilidad", "A-255");
+		  
+		  BST bst = new BST(); 
+		  System.out.println("Esta vacio: " + bst.esVacio() +" y es hoja " + bst.esHoja()); 
+		  System.out.println("Esta vacio: " + bst.esVacio() + " y es hoja " + bst.esHoja()); 
+		  
+		  bst.insertar(e1); 
+		  System.out.println("Esta vacio: " + bst.esVacio() + " y es hoja " + bst.esHoja());
+		  bst.insertar(e2); 
+		  System.out.println("Esta vacio: " + bst.esVacio() + " y es hoja " + bst.esHoja()); 
+		  bst.insertar(e3);
+		  System.out.println("Esta vacio: " + bst.esVacio() + " y es hoja " + bst.esHoja()); 
+		  bst.insertar(e8); 
+		  System.out.println("Esta vacio: " + bst.esVacio() + " y es hoja " + bst.esHoja());
+		  
+		  localizar(bst,20); localizar(bst,45); localizar(bst,25); localizar(bst,19);
+		  
+		//Arrays.asList(e1, e2, e3, e4, e5, e6, e7).forEach(bst::insertar);
+		  bst.insertar(e2); 
+		  bst.insertar(e3); 
+		  bst.insertar(e4); 
+		  bst.insertar(e5);
+		  bst.insertar(e6); 
+		  bst.insertar(e7); 
+		  bst.insertar(e8);
+		  
+		  bst.inOrden();
+		  
+			/*
+			 * BST bst = new BST(); System.out.println("Esta vacio: " + bst.esVacio() +
+			 * " y es hoja " + bst.esHoja()); bst.insertar(e1);
+			 * System.out.println("Esta vacio: " + bst.esVacio() + " y es hoja " +
+			 * bst.esHoja());
+			 */
     	
     }
 
